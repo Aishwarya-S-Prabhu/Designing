@@ -2,37 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Charm:wght@700&family=Libre+Baskerville&family=Notable&family=Squada+One&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-
+    <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tokeners</title>
   </head>
   <body>
+    <!-- header section -->
     <header>
       <div class="left">
         <div class="logoDetails">
           <img src="./assets/logo.png" alt="logo" class="logo" />
           <p>Tokerners</p>
         </div>
-        <div class="features">
-          <p>Our Team</p>
-          <p>Tokens</p>
-          <p>Connect wallet</p>
-          <p>Lightpaper</p>
+        <div class="featureDetails">
+          <div class="features">
+            <p>Our Team</p>
+            <p>Tokens</p>
+            <p>Connect wallet</p>
+            <p>Lightpaper</p>
+          </div>
+          <div class="login">
+            <p>Sign In</p>
+            <!-- <p>Sign Up</p> -->
+            <button class="signUp">Sign Up</button>
+          </div>
         </div>
-      </div>
-      <div class="login">
-        <p>Sign In</p>
-        <p>Sign Up</p>
+        <button onclick="" class="menu">Menu</button>
       </div>
     </header>
+
+    <!-- section 1: Landing page -->
     <section class="first">
-      <div class="text">
-        <p>At Tokners we are</p>
+      <div class="firstText">
+        <p style="color: #0893ce; font-weight: 700">At Tokners we are</p>
         <h2>Reimagining social media through the power of the blockchain.</h2>
         <p>
           We are creating social media 3.0 with influencers, celebrities and
@@ -40,70 +48,132 @@
           creating a profile with media content posted as Non fungible Tokens
           that can be owned and traded on the Tknrs network
         </p>
-        <button>Learn more</button>
+        <button class="button">Learn more</button>
       </div>
-      <div class="image">
-        <img src="./assets/topImage.png" alt="top image" />
+      <div class="firstImage">
+        <img src="./assets/topImage.png" alt="top image" style="width: 100%" />
       </div>
     </section>
+
+    <!-- section 2: Users -->
     <section class="second">
       <div class="creators">
-        <img alt="icon" />
-        <h2>For Creaters</h2>
-        <p>
-          Creators can gain independence through a decentralised digital
-          currency system that is dependent on growing and engaging with the
-          community and also their star power. They own 10-15% of the total
-          value of the tokens minted.
-        </p>
-        <a>Learn more</a>
+        <img src="./assets/icons/create.svg" alt="icon" class="hold" />
+        <h2>
+          For
+          <span style="color: #22a75d; text-decoration: underline"
+            >Creaters</span
+          >
+        </h2>
+        <div class="paraHeight">
+          <p>
+            Creators can gain independence through a decentralised digital
+            currency system that is dependent on growing and engaging with the
+            community and also their star power. They own 10-15% of the total
+            value of the tokens minted.
+          </p>
+        </div>
+        <div class="arrowContain">
+          <a style="color: #22a75d; text-decoration: underline">Learn more</a>
+          <img
+            src="./assets/icons/greenArr.png"
+            alt="green arrow"
+            class="arrow"
+          />
+        </div>
       </div>
-      <div class="holders">
-        <img alt="icon" />
-        <h2>For Holders</h2>
-        <p>
-          Holding social tokens allows the individual to gain access to benefits
-          including unreleased content, private communities, direct access to
-          celebrity, early- access to tickets and more as well as the ability to
-          trade with other communities in order to gain access to more creator
-          content with early token buyers being the biggest winners as the value
-          of the token increases with more buyers.
-        </p>
-        <a>Learn more</a>
+      <div class="holders phaseTwo">
+        <img
+          src="./assets/icons/hold.svg"
+          alt="icon"
+          class="hold"
+          style="background-color: #2278d4"
+        />
+        <h2>
+          For
+          <span style="color: #2278d4; text-decoration: underline"
+            >Holders</span
+          >
+        </h2>
+        <div class="paraHeight">
+          <p>
+            Holding social tokens allows the individual to gain access to
+            benefits including unreleased content, private communities, direct
+            access to celebrity, early- access to tickets and more as well as
+            the ability to trade with other communities in order to gain access
+            to more creator content with early token buyers being the biggest
+            winners as the value of the token increases with more buyers.
+          </p>
+        </div>
+        <div class="arrowContain">
+          <a style="color: #2278d4; text-decoration: underline">Learn more</a>
+          <img
+            src="./assets/icons/blueArrow.png"
+            alt="green arrow"
+            class="arrow"
+          />
+        </div>
       </div>
     </section>
+
+    <!-- section 3: What makes them different? -->
     <section class="third">
       <div class="thirdImage"></div>
+
       <div class="thirdText">
-        <h2 class="textColor">What makes us different?</h2>
-        <p class="textColor">
-          We would only launch tokens with the express permission of the
-          creators.
-        </p>
-        <p class="textColor">
-          There are several thousand celebrities and creators on twitter,
-          tiktok, Instagram and YouTube with followings in the millions who we
-          would be actively engaging before we go viral. We would get them on
-          our platform and they would see the opportunity to create a fan driven
-          digital economy where their digital content can be traded as NFTs and
-          their most loyal fans can have the monetary value of their creator's
-          currency increase significantly as they promote their digital currency
-          across their channels while our native token holders benefit from the
-          Weentar popularity.
-        </p>
+        <div id="background">
+          <p id="bg-text">Ween</p>
+        </div>
+        <div style="z-index: 1; position: absolute">
+          <h2 style="font-size: 24px; font-weight: 700">
+            What makes us different?
+          </h2>
+          <p class="textColor" style="font-weight: 700">
+            We would only launch tokens with the express permission of the
+            creators.
+          </p>
+          <p class="textColor">
+            There are several thousand celebrities and creators on twitter,
+            tiktok, Instagram and YouTube with followings in the millions who we
+            would be actively engaging before we go viral.
+          </p>
+          <p class="textColor">
+            We would get them on our platform and they would see the opportunity
+            to create a fan driven digital economy where their digital content
+            can be traded as NFTs and their most loyal fans can have the
+            monetary value of their creator's currency increase significantly as
+            they promote their digital currency across their channels while our
+            native token holders benefit from the Weentar popularity.
+          </p>
+        </div>
       </div>
     </section>
+
+    <!-- section 4: Q features -->
     <section class="fourth">
       <div class="fourthBg">
         <div class="qData">
-          <div class="qImage"></div>
+          <div class="ovalContain">
+            <div class="oval1 oval" style="color: black">Q1</div>
+            <div class="circ">
+              <div class="circle"></div>
+              <p style="margin: 0; padding: 0">2021</p>
+            </div>
+          </div>
           <ol>
             <li>Team set-up</li>
             <li>Launch of informational website</li>
           </ol>
         </div>
         <div class="qData">
-          <div class="qImage"></div>
+          <div class="ovalContain">
+            <div class="oval2 oval" style="color: black">Q2</div>
+            <div class="circ">
+              <div class="circle" style="background-color: #2278d4"></div>
+              <p style="margin: 0; padding: 0">2021</p>
+            </div>
+          </div>
+
           <ol>
             <li>Presale and exchange listings</li>
             <li>Blockchain development and launch</li>
@@ -113,7 +183,13 @@
           </ol>
         </div>
         <div class="qData">
-          <div class="qImage"></div>
+          <div class="ovalContain">
+            <div class="oval3 oval" style="color: black">Q3</div>
+            <div class="circ">
+              <div class="circle" style="background-color: #ffd100"></div>
+              <p style="margin: 0; padding: 0">2021</p>
+            </div>
+          </div>
           <ol>
             <li>Celebrity, Creator and Influencer partnerships</li>
             <li>Expansion of creator communities on our platform</li>
@@ -121,7 +197,18 @@
           </ol>
         </div>
         <div class="qData">
-          <div class="qImage"></div>
+          <div class="ovalContain">
+            <div
+              class="oval1 oval"
+              style="color: black; background-color: #e20613"
+            >
+              Q4
+            </div>
+            <div class="circ">
+              <div class="circle" style="background-color: #e20613"></div>
+              <p style="margin: 0; padding: 0">2021</p>
+            </div>
+          </div>
           <ol>
             <li>Mainstream partnerships</li>
             <li>500 active creator communities</li>
@@ -131,101 +218,166 @@
         </div>
       </div>
     </section>
+
+    <!-- section 5: About Tokener -->
     <section class="fifth">
       <div class="fifthText">
-        <div>
-          <img alt="logo" />
-          <h2>Tokner is coming</h2>
+        <div class="logoDetails">
+          <img src="./assets/logo.png" alt="logo" class="logo" />
+          <h2>Tokerners is coming</h2>
         </div>
-        <p>
-          Cryptocurrency adoption is at less than 1% of the global world
-          population with some countries and entities actively fighting against
-          its mass adoption and the smartest developers and nerds holding the
-          fort.
-        </p>
-        <p>
-          Bitcoin was the first, and it has since grown to thousands of tokens
-          launched all aiming to fix one problem or the other with some quite
-          simply FOMOing the moment. Our goal is to bring mass adoption to the
-          cryptocurrency space by dumbing it down. How far down? So down that
-          even a celebrity can explain it in simple words to their followers and
-          have them download an app, buy into the social currency of their
-          favourite person and watch their investment as is with other crypto
-          currency project.
-        </p>
-        <p>
-          We are trying to do to this space what investment apps did for the
-          "nonexistent retail investors". We are gamefying digital currency,
-          bringing in popular faces instead of hard to understand projects to
-          make it the norm and inadvertently being the "gateway drug" for a lot
-          of people to finally give this space a real look.
-        </p>
-        <p>
-          A new digital economy is coming. People would be just as powerful as
-          countries and creators would be paid beyond the peanuts that
-          conventional social media platforms can offer.
-        </p>
-        <p>
-          There would be new markets and advertisers with little to offer would
-          not find home there. Like Kanye said,
-        </p>
-        <p>
-          "Personalities would become the new currency, and services would be
-          built on top of them".
-        </p>
-        <p>
-          Well, Kanye didn't exactly say that, but it sounds like something we
-          hope he would say.
-        </p>
-        <p>
-          Currency is digital, it has been that way for a while now, but this
-          time there would be no dead presidents on the money, there would
-          people like you on the money, and you would own it because it would
-          make the most sense in the world.
-        </p>
-        <button>Read more</button>
+
+        <div class="aboutDetails">
+          <p style="font-weight: 700">
+            Cryptocurrency adoption is at less than 1% of the global world
+            population with some countries and entities actively fighting
+            against its mass adoption and the smartest developers and nerds
+            holding the fort.
+          </p>
+          <p>
+            Bitcoin was the first, and it has since grown to thousands of tokens
+            launched all aiming to fix one problem or the other with some quite
+            simply FOMOing the moment. Our goal is to bring mass adoption to the
+            cryptocurrency space by dumbing it down. How far down? So down that
+            even a celebrity can explain it in simple words to their followers
+            and have them download an app, buy into the social currency of their
+            favourite person and watch their investment as is with other crypto
+            currency project.
+          </p>
+          <p>
+            We are trying to do to this space what investment apps did for the
+            "nonexistent retail investors". We are gamefying digital currency,
+            bringing in popular faces instead of hard to understand projects to
+            make it the norm and inadvertently being the "gateway drug" for a
+            lot of people to finally give this space a real look.
+          </p>
+          <p style="font-weight: 700">
+            A new digital economy is coming. People would be just as powerful as
+            countries and creators would be paid beyond the peanuts that
+            conventional social media platforms can offer.
+          </p>
+          <p>
+            There would be new markets and advertisers with little to offer
+            would not find home there. Like Kanye said,
+          </p>
+          <p style="font-weight: 700">
+            "Personalities would become the new currency, and services would be
+            built on top of them".
+          </p>
+          <p>
+            Well, Kanye didn't exactly say that, but it sounds like something we
+            hope he would say.
+          </p>
+          <p>
+            Currency is digital, it has been that way for a while now, but this
+            time there would be no dead presidents on the money, there would
+            people like you on the money, and you would own it because it would
+            make the most sense in the world.
+          </p>
+        </div>
+
+        <button class="signUp" style="margin-top: 20px">Read more</button>
       </div>
       <div class="fifthImage">
-        <img src="./assets/fifthImage.png" alt="hand holding phone" />
+        <img
+          src="./assets/fifthImage.png"
+          alt="hand holding phone"
+          class="phoneHolding"
+        />
       </div>
     </section>
+
+    <!-- section 6: Presale details -->
     <section class="sixth">
-      <h2 class="presaleHead">Presale Details</h2>
-      <div class="phaseContainer">
-        <div class="phase">
-          <div class="phaseNum">
-            <div class="oval1 oval">01</div>
-            <p>Phase One</p>
-            <p>0/04/2021 - 16/04/2021</p>
+      <div class="sixthBG">
+        <h2 class="presaleHead">Presale Details</h2>
+        <div class="phaseContainer">
+          <div class="phase">
+            <div id="background">
+              <p
+                id="bg-text"
+                style="margin-left: 0; margin-top: 0; font-size: 200px"
+              >
+                01
+              </p>
+            </div>
+            <div style="z-index: 1; position: absolute">
+              <div class="phaseNum">
+                <div class="oval1 oval" style="margin-bottom: 3vh">01</div>
+                <p class="phaseTitle">Phase One</p>
+                <p class="opac" style="margin-bottom: 3vh">
+                  0/04/2021 - 16/04/2021
+                </p>
+              </div>
+              <div class="phaseContent">
+                <p class="opac" style="font-size: 15px; margin-bottom: 1.5vh">
+                  1 BNB = 100000 WNTR
+                </p>
+                <p>Soft cap:<span class="opac"> 5000 BNB</span></p>
+                <p>Hard cap:<span class="opac"> 10000 BNB</span></p>
+              </div>
+            </div>
           </div>
-          <p>1 BNB = 100000 WNTR</p>
-          <p>Soft cap: 5000 BNB</p>
-          <p>Hard cap: 10000 BNB</p>
-        </div>
-        <div class="phase">
-          <div class="phaseNum">
-            <div class="oval2 oval">02</div>
-            <p>Phase Two</p>
-            <p>0/04/2021 - 16/04/2021</p>
+
+          <div class="phase phaseTwo">
+            <div id="background">
+              <p
+                id="bg-text"
+                style="margin-left: 0; margin-top: 0; font-size: 200px"
+              >
+                02
+              </p>
+            </div>
+            <div style="z-index: 1; position: absolute">
+              <div class="phaseNum">
+                <div class="oval2 oval" style="margin-bottom: 3vh">02</div>
+                <p class="phaseTitle">Phase Two</p>
+                <p class="opac" style="margin-bottom: 3vh">
+                  0/04/2021 - 16/04/2021
+                </p>
+              </div>
+              <div class="phaseContent">
+                <p class="opac" style="font-size: 15px; margin-bottom: 1.5vh">
+                  1 BNB = 100000 WNTR
+                </p>
+                <p>Soft cap:<span class="opac"> 5000 BNB</span></p>
+                <p>Hard cap:<span class="opac"> 10000 BNB</span></p>
+              </div>
+            </div>
           </div>
-          <p>1 BNB = 100000 WNTR</p>
-          <p>Soft cap: 5000 BNB</p>
-          <p>Hard cap: 10000 BNB</p>
-        </div>
-        <div class="phase">
-          <div class="phaseNum">
-            <div class="oval3 oval">03</div>
-            <p>Phase Three</p>
-            <p>0/04/2021 - 16/04/2021</p>
+          <div class="phase">
+            <div id="background">
+              <p
+                id="bg-text"
+                style="margin-left: 0; margin-top: 0; font-size: 200px"
+              >
+                03
+              </p>
+            </div>
+            <div style="z-index: 1; position: absolute">
+              <div class="phaseNum">
+                <div class="oval3 oval" style="margin-bottom: 3vh">03</div>
+                <p class="phaseTitle">Phase Three</p>
+                <p class="opac" style="margin-bottom: 3vh">
+                  0/04/2021 - 16/04/2021
+                </p>
+              </div>
+              <div class="phaseContent">
+                <p class="opac" style="font-size: 15px; margin-bottom: 1.5vh">
+                  1 BNB = 100000 WNTR
+                </p>
+                <p>Soft cap:<span class="opac"> 5000 BNB</span></p>
+                <p>Hard cap:<span class="opac"> 10000 BNB</span></p>
+              </div>
+            </div>
           </div>
-          <p>1 BNB = 100000 WNTR</p>
-          <p>Soft cap: 5000 BNB</p>
-          <p>Hard cap: 10000 BNB</p>
         </div>
       </div>
     </section>
-    <section class="seventh">
-      <h2 class="presaleHead">How to buy</h2>
+
+    <!-- section 7: How to buy -->
+    <section class="seventh" >
+      <h2 class="presaleHead" >How to buy</h2>
       <div class="buyContainer">
         <div class="buy">
           <p>01</p>
@@ -236,7 +388,7 @@
             </p>
           </div>
         </div>
-        <div class="buy">
+        <div class="buy phaseTwo">
           <p>02</p>
           <div class="buyText">
             <p>
@@ -255,16 +407,19 @@
           </div>
         </div>
       </div>
+
     </section>
+
+    <!-- footer section -->
     <footer>
       <div class="outerTop">
         <div class="innerTop">
           <p>OUR TEAM</p>
-          <p>/</p>
+          <p style="opacity: .4;">/</p>
           <p>TOKENS</p>
-          <p>/</p>
+          <p style="opacity: .4;">/</p>
           <p>CONNECT WALLET</p>
-          <p>/</p>
+          <p style="opacity: .4;">/</p>
           <p>LIGHTPAPER</p>
         </div>
       </div>
@@ -274,12 +429,36 @@
           <p>Tokerners</p>
         </div>
         <div class="connectContainer">
-          <img src="./assets/icons/twitter-fill.svg" alt="twitter" class="connect"/>
-          <img src="./assets/icons/telegram-line.svg" alt="telegram" class="connect"/>
-          <img src="./assets/icons/instagram-line.svg" alt="instagram"class="connect"/>
-          <img src="./assets/icons/medium-line.svg" alt="medium" class="connect"/>
-          <img src="./assets/icons/github-fill.svg" alt="github" class="connect"/>
-          <img src="./assets/icons/reddit-line.svg" alt="reddit" class="connect"/>
+          <img
+            src="./assets/icons/twitter-fill.svg"
+            alt="twitter"
+            class="connect"
+          />
+          <img
+            src="./assets/icons/telegram-line.svg"
+            alt="telegram"
+            class="connect"
+          />
+          <img
+            src="./assets/icons/instagram-line.svg"
+            alt="instagram"
+            class="connect"
+          />
+          <img
+            src="./assets/icons/medium-line.svg"
+            alt="medium"
+            class="connect"
+          />
+          <img
+            src="./assets/icons/github-fill.svg"
+            alt="github"
+            class="connect"
+          />
+          <img
+            src="./assets/icons/reddit-line.svg"
+            alt="reddit"
+            class="connect"
+          />
         </div>
         <div class="right">
           <p style="text-align: right">© 2021 Tokners. All rights reserved.</p>
