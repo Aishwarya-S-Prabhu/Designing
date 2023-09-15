@@ -4,19 +4,29 @@ body {
   padding: 0;
   color: white;
   background-color: #0f1320;
+  background: rgb(15, 19, 32);
+  background: linear-gradient(
+    60deg,
+    rgba(15, 19, 32, 1) 13%,
+    rgba(23, 21, 33, 1) 29%,
+    rgba(74, 37, 49, 1) 45%,
+    rgba(44, 41, 59, 1) 66%,
+    rgba(48, 59, 92, 1) 90%,
+    rgba(30, 49, 78, 1) 100%
+  ); 
 }
 
 /* common css */
-button{
+button {
   color: white;
   height: 35px;
   width: 100px;
   border-radius: 20px;
-
 }
 
 /* header section css */
 header {
+  background-color: #0f1320;
   padding: 2vw 2vw 2vw 2vw;
   /* width: 1280px; */
   box-sizing: border-box;
@@ -61,6 +71,7 @@ header {
 /* section 1: Landing page css */
 .first {
   /* width: 1280px; */
+  background-color: #0f1320;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -78,7 +89,7 @@ header {
 }
 .firstText p {
   color: #dde2ff;
-  opacity: .8;
+  opacity: 0.5;
   font-family: Gothic;
   font-size: 14px;
   font-weight: 400;
@@ -102,8 +113,9 @@ header {
 
 /* section 2: users css */
 .second {
-padding-top: 0;
-padding-bottom: 8vw;
+  background-color: #0f1320;
+  padding-top: 0;
+  padding-bottom: 8vw;
   padding-left: 8vw;
   padding-right: 8vw;
   gap: 3vw;
@@ -122,7 +134,7 @@ padding-bottom: 8vw;
   min-width: 40vw;
   min-height: 52vh;
   color: #dde2ff;
-  opacity: .8;
+  opacity: 0.8;
   font-family: Gothic;
   font-size: 12px;
   font-weight: 400;
@@ -158,6 +170,7 @@ padding-bottom: 8vw;
 /* section 3: what makes us different css */
 .third {
   /* width: 1280px; */
+  background-color: #0f1320;
   min-height: 90vh;
   display: flex;
   margin: 0;
@@ -165,10 +178,9 @@ padding-bottom: 8vw;
   gap: 0;
 
   /* overflow: hidden; */
-
 }
 .thirdText {
-  min-height: 60vh;
+  min-height: 80vh;
   border-radius: 200px 0 0 0;
 
   background-color: white;
@@ -177,21 +189,22 @@ padding-bottom: 8vw;
   padding: 15vw 0 0 10vw;
   box-sizing: border-box;
 }
+
 .thirdImage {
   border-radius: 0 200px 0 0;
-  background-image: url(./assets/thirdBG.png);
+  background-image: url(./assets/sixthBG.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 50vh;
   min-width: 49%;
 }
 .textColor {
   color: black;
-  opacity: .8;
+  opacity: 0.8;
   /* margin-top: 10px; */
   padding-right: 16vw;
-  opacity: .8;
+  opacity: 0.8;
   font-family: Gothic;
   font-size: 10px;
   font-weight: 400;
@@ -222,6 +235,7 @@ padding-bottom: 8vw;
 /* section 4: q features css */
 .fourth {
   /* width: 1280px; */
+  background-color: #0f1320;
   min-height: 60vh;
   background-color: #fff;
   margin: 0;
@@ -248,14 +262,14 @@ padding-bottom: 8vw;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  opacity: .8;
+  opacity: 0.8;
 }
 ol {
   margin-top: 3vh;
   padding-left: 1vw;
-  min-height: 140px;
+  min-height: 14vw;
 }
-.circ p{
+.circ p {
   font-weight: 700;
 }
 .ovalContain {
@@ -278,13 +292,14 @@ ol {
 /* section 5: About tokener */
 .fifth {
   /* width: 1280px; */
+  background-color: #0f1320;
   display: flex;
   padding: 5%;
   gap: 5vw;
   min-height: 120vh;
   box-sizing: border-box;
 }
-.fifthText{
+.fifthText {
   min-width: 40%;
 }
 .fifthImage {
@@ -293,13 +308,13 @@ ol {
   border-radius: 20px;
   position: relative;
 }
-.aboutDetails p{
+.aboutDetails p {
   color: #dde2ff;
   font-family: Gothic;
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
-  opacity: .6;
+  opacity: 0.6;
 }
 .phoneHolding {
   position: absolute;
@@ -312,13 +327,12 @@ ol {
 /* section 6: presale css */
 .sixth {
   /* width: 1280px; */
+  background-color: #0f1320;
   min-height: 40vh;
   box-sizing: border-box;
   padding-top: 15vh;
-
-
 }
-.sixthBG{
+.sixthBG {
   margin: 0;
   padding: 0;
   min-height: 50vh;
@@ -338,7 +352,6 @@ ol {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  
 }
 .phaseContainer {
   gap: 1.5vw;
@@ -380,11 +393,11 @@ ol {
   justify-content: center;
   align-items: center;
 }
-.phaseContent p{
+.phaseContent p {
   font-family: Gothic;
   font-size: 11px;
   font-style: normal;
-  margin: .5vh;
+  margin: 0.5vh;
 }
 .opac {
   opacity: 0.8;
@@ -416,7 +429,6 @@ h1 {
   align-items: center;
 }
 
-
 /* section 7: how to buy */
 .seventh {
   min-height: 60vh;
@@ -441,7 +453,8 @@ h1 {
   padding: 1%;
   box-sizing: border-box;
 }
-.buyText p,.buy p{
+.buyText p,
+.buy p {
   opacity: 0.8;
   font-weight: 700;
   font-family: Gothic;
@@ -463,25 +476,27 @@ h1 {
 
 /* footer section */
 footer {
-  min-height: 30vh;
+  min-height: 40vh;
   padding-top: 8%;
   display: flex;
   flex-direction: column;
   gap: 40px;
   box-sizing: border-box;
 }
+
 .outerBottom {
   display: flex;
   justify-content: space-between;
   padding: 0 10vw 0 10vw;
 }
-.innerTop{
+.innerTop {
   display: flex;
   justify-content: center;
   gap: 2vw;
   /* box-sizing: border-box; */
 }
-.innerTop p,.right p{
+.innerTop p,
+.right p {
   opacity: 0.8;
   font-weight: 700;
   font-family: Gothic;
@@ -516,27 +531,63 @@ footer {
 
 /* responsive */
 
-@media (max-width:375px){
-  .first{
+@media (max-width: 375px) {
+  .first {
     padding: 0 5vw 0 5vw;
+    box-sizing: border-box;
   }
-  .fourthBg,.first,.second,.third,.fifth,.phaseContainer,.buyContainer{
+  .fourthBg,
+  .first,
+  .second,
+  .third,
+  .fifth,
+  .phaseContainer,
+  .buyContainer {
     flex-direction: column;
   }
-  .phaseTwo{
+  .phaseTwo {
     margin-top: 0;
   }
-  .featureDetails{
+  .featureDetails {
     visibility: hidden;
   }
-  .thirdText #background{
+  .thirdText #background {
     visibility: hidden;
   }
-  .qData{
+  .qData {
     margin-top: 1vw;
+    box-sizing: border-box;
   }
-  .fourthBg{
+  .fourthBg {
     border-radius: 0 0 0 0;
     margin-top: 1vh;
+    box-sizing: border-box;
+  }
+  .thirdImage{
+    border-radius: 200px 0 0 0;
+  }
+  .thirdText{
+    border-radius: 0 200px 0 0;
+  }
+  .fourthBg{
+
+    align-items: flex-start;
+  }
+  .qData{
+    padding: 3vw;
+    box-sizing: border-box;
+  }
+  .phoneHolding{
+    position: relative;
+    min-width: 20%;
+    min-height: 20%;
+    margin-right: 2vw;
+    box-sizing: border-box;
+    
+  }
+  .fifthImage{
+    min-width: 5%;
+    position: relative;
+    box-sizing: border-box;
   }
 }
