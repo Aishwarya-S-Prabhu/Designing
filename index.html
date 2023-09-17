@@ -5,6 +5,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Charm:wght@700&family=Libre+Baskerville&family=Notable&family=Squada+One&display=swap"
       rel="stylesheet"
     />
@@ -21,19 +25,23 @@
           <p>Tokerners</p>
         </div>
         <div class="featureDetails">
-          <div class="features">
-            <p>Our Team</p>
-            <p>Tokens</p>
-            <p>Connect wallet</p>
-            <p>Lightpaper</p>
+          <div class="menu" onclick="view()">Menu</div>
+          <!-- <div class="test"> -->
+          <div class="toggle">
+            <div class="features">
+              <p>Our Team</p>
+              <p>Tokens</p>
+              <p>Connect wallet</p>
+              <p>Lightpaper</p>
+            </div>
+            <div class="login">
+              <p>Sign In</p>
+              <!-- <p>Sign Up</p> -->
+              <button class="signUp">Sign Up</button>
+            </div>
           </div>
-          <div class="login">
-            <p>Sign In</p>
-            <!-- <p>Sign Up</p> -->
-            <button class="signUp">Sign Up</button>
-          </div>
+          <!-- </div> -->
         </div>
-        <button onclick="" class="menu">Menu</button>
       </div>
     </header>
 
@@ -121,9 +129,9 @@
       <div class="thirdImage"></div>
 
       <div class="thirdText">
-        <div id="background">
+        <!-- <div id="background">
           <p id="bg-text">Ween</p>
-        </div>
+        </div> -->
         <div style="z-index: 1; position: absolute">
           <h2 style="font-size: 24px; font-weight: 700">
             What makes us different?
@@ -161,8 +169,11 @@
             </div>
           </div>
           <ol>
-            <li>Team set-up</li>
-            <li>Launch of informational website</li>
+            <li><span style="color: #22a75d">1.</span> Team set-up</li>
+            <li>
+              <span style="color: #22a75d">2.</span> Launch of informational
+              website
+            </li>
           </ol>
         </div>
         <div class="qData">
@@ -175,11 +186,22 @@
           </div>
 
           <ol>
-            <li>Presale and exchange listings</li>
-            <li>Blockchain development and launch</li>
-            <li>Launch of our MVP</li>
-            <li>Influencer agency partnerships</li>
-            <li>Marketing and promotion</li>
+            <li>
+              <span style="color: #2278d4">1.</span> Presale and exchange
+              listings
+            </li>
+            <li>
+              <span style="color: #2278d4">2.</span> Blockchain development and
+              launch
+            </li>
+            <li><span style="color: #2278d4">3.</span> Launch of our MVP</li>
+            <li>
+              <span style="color: #2278d4">4.</span> Influencer agency
+              partnerships
+            </li>
+            <li>
+              <span style="color: #2278d4">5.</span> Marketing and promotion
+            </li>
           </ol>
         </div>
         <div class="qData">
@@ -191,9 +213,18 @@
             </div>
           </div>
           <ol>
-            <li>Celebrity, Creator and Influencer partnerships</li>
-            <li>Expansion of creator communities on our platform</li>
-            <li>More Marketing and promotion</li>
+            <li>
+              <span style="color: #ffd100">1.</span> Celebrity, Creator and
+              Influencer partnerships
+            </li>
+            <li>
+              <span style="color: #ffd100">2.</span> Expansion of creator
+              communities on our platform
+            </li>
+            <li>
+              <span style="color: #ffd100">3.</span> More Marketing and
+              promotion
+            </li>
           </ol>
         </div>
         <div class="qData">
@@ -210,10 +241,21 @@
             </div>
           </div>
           <ol>
-            <li>Mainstream partnerships</li>
-            <li>500 active creator communities</li>
-            <li>2Million active community members</li>
-            <li>More Marketing and promotion</li>
+            <li>
+              <span style="color: #e20613">1.</span> Mainstream partnerships
+            </li>
+            <li>
+              <span style="color: #e20613">2.</span> 500 active creator
+              communities
+            </li>
+            <li>
+              <span style="color: #e20613">3.</span> 2Million active community
+              members
+            </li>
+            <li>
+              <span style="color: #e20613">4.</span> More Marketing and
+              promotion
+            </li>
           </ol>
         </div>
       </div>
@@ -276,7 +318,7 @@
           </p>
         </div>
 
-        <button class="signUp" style="margin-top: 20px">Read more</button>
+        <button class="signUp" style="margin-top: 20px" onclick="cut()">Read more</button>
       </div>
       <div class="fifthImage">
         <img
@@ -318,9 +360,9 @@
               </div>
             </div>
           </div>
-
+      
           <div class="phase phaseTwo">
-            <div id="background">
+            <div id="background" >
               <p
                 id="bg-text"
                 style="margin-left: 0; margin-top: 0; font-size: 200px"
@@ -346,7 +388,7 @@
             </div>
           </div>
           <div class="phase">
-            <div id="background">
+            <div id="background" >
               <p
                 id="bg-text"
                 style="margin-left: 0; margin-top: 0; font-size: 200px"
@@ -371,13 +413,14 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> 
+        
       </div>
     </section>
 
     <!-- section 7: How to buy -->
-    <section class="seventh" >
-      <h2 class="presaleHead" >How to buy</h2>
+    <section class="seventh">
+      <h2 class="presaleHead">How to buy</h2>
       <div class="buyContainer">
         <div class="buy">
           <p>01</p>
@@ -388,8 +431,18 @@
             </p>
           </div>
         </div>
+        <!-- <div
+          class="next"
+          style="
+            background-color: #121420;
+            position: absolute;
+            left: 36vw;
+            top: 4190px;
+          "
+        ></div> -->
         <div class="buy phaseTwo">
           <p>02</p>
+
           <div class="buyText">
             <p>
               Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale
@@ -397,6 +450,16 @@
             </p>
           </div>
         </div>
+        <!-- <div
+          class="next"
+          style="
+            background-color: #151421;
+
+            position: absolute;
+            right: 32.5vw;
+            top: 4190px;
+          "
+        ></div> -->
         <div class="buy">
           <p>03</p>
           <div class="buyText">
@@ -407,73 +470,87 @@
           </div>
         </div>
       </div>
-
     </section>
 
     <!-- footer section -->
     <footer>
       <div class="footerBG">
-      <div class="outerTop" style="z-index: 1;margin-bottom: 5%;">
-        <div class="innerTop">
-          <p>OUR TEAM</p>
-          <p style="opacity: .4;">/</p>
-          <p>TOKENS</p>
-          <p style="opacity: .4;">/</p>
-          <p>CONNECT WALLET</p>
-          <p style="opacity: .4;">/</p>
-          <p>LIGHTPAPER</p>
+        <div class="outerTop" style="z-index: 1; margin-bottom: 5%">
+          <div class="innerTop">
+            <p>OUR TEAM</p>
+            <p style="opacity: 0.4">/</p>
+            <p>TOKENS</p>
+            <p style="opacity: 0.4">/</p>
+            <p>CONNECT WALLET</p>
+            <p style="opacity: 0.4">/</p>
+            <p>LIGHTPAPER</p>
+          </div>
         </div>
-      </div>
-      <div class="outerBottom" style="z-index: 1;margin-bottom: 5%;">
-        <div class="logoDetails">
-          <img src="./assets/logo.png" alt="logo" class="logo" />
-          <p>Tokerners</p>
-        </div>
-        <div class="connectContainer">
-          <img
-            src="./assets/icons/twitter-fill.svg"
-            alt="twitter"
-            class="connect"
-          />
-          <img
-            src="./assets/icons/telegram-line.svg"
-            alt="telegram"
-            class="connect"
-          />
-          <img
-            src="./assets/icons/instagram-line.svg"
-            alt="instagram"
-            class="connect"
-          />
-          <img
-            src="./assets/icons/medium-line.svg"
-            alt="medium"
-            class="connect"
-          />
-          <img
-            src="./assets/icons/github-fill.svg"
-            alt="github"
-            class="connect"
-          />
-          <img
-            src="./assets/icons/reddit-line.svg"
-            alt="reddit"
-            class="connect"
-          />
-        </div>
-        <div class="right">
-          <p style="text-align: right">© 2021 Tokners. All rights reserved.</p>
-          <div class="auth">
+        <div class="outerBottom" style="z-index: 1; margin-bottom: 5%">
+          <div class="logoDetails">
+            <img src="./assets/logo.png" alt="logo" class="logo" />
+            <p>Tokerners</p>
+          </div>
+          <div class="connectContainer">
             <img
-              src="./assets/footerSyb.svg"
-              alt="Author logo"
-              class="footLogo"
+              src="./assets/icons/twitter-fill.svg"
+              alt="twitter"
+              class="connect"
             />
-            <p style="text-align: left">Design by Oleg Kulik</p>
+            <img
+              src="./assets/icons/telegram-line.svg"
+              alt="telegram"
+              class="connect"
+            />
+            <img
+              src="./assets/icons/instagram-line.svg"
+              alt="instagram"
+              class="connect"
+            />
+            <img
+              src="./assets/icons/medium-line.svg"
+              alt="medium"
+              class="connect"
+            />
+            <img
+              src="./assets/icons/github-fill.svg"
+              alt="github"
+              class="connect"
+            />
+            <img
+              src="./assets/icons/reddit-line.svg"
+              alt="reddit"
+              class="connect"
+            />
+          </div>
+          <div class="right">
+            <p style="text-align: left; font-size: 9px">
+              © 2021 Tokners. All rights reserved.
+            </p>
+            <div class="auth">
+              <img
+                src="./assets/footerSyb.svg"
+                alt="Author logo"
+                class="footLogo"
+              />
+              <p style="text-align: left; font-size: 9px; opacity: 0.5">
+                Design by Oleg Kulik
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </footer>
   </body>
+
+  <!-- for toggling to see menu and truncate-->
+  <script>
+    function view() {
+      document.querySelector(".toggle").classList.toggle("show");
+    }
+    function cut(){
+      document.querySelector(".aboutDetails").classList.toggle("truncate");
+      console.log("Truncate");
+    }
+  </script>
 </html>

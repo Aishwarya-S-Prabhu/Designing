@@ -4,16 +4,16 @@ body {
   padding: 0;
   color: white;
   background-color: #0f1320;
-  background: rgb(15, 19, 32);
+  /* background: rgb(29, 38, 60);
   background: linear-gradient(
-    60deg,
-    rgba(15, 19, 32, 1) 13%,
-    rgba(23, 21, 33, 1) 29%,
-    rgba(74, 37, 49, 1) 45%,
-    rgba(44, 41, 59, 1) 66%,
-    rgba(48, 59, 92, 1) 90%,
-    rgba(30, 49, 78, 1) 100%
-  ); 
+    90deg,
+    rgba(29, 38, 60, 1) 0%,
+    rgba(31, 41, 65, 1) 12%,
+    rgba(30, 36, 57, 1) 34%,
+    rgba(53, 33, 49, 1) 60%,
+    rgba(47, 27, 40, 1) 82%,
+    rgba(15, 19, 32, 1) 100%
+  ); */
 }
 
 /* common css */
@@ -25,6 +25,7 @@ button {
 }
 
 /* header section css */
+
 header {
   background-color: #0f1320;
   padding: 2vw 2vw 2vw 2vw;
@@ -37,20 +38,27 @@ header {
   font-style: normal;
   font-weight: 400;
 }
-/* outer div */
+/* outer div (logo and features*/
 .left {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  font-size: small;
-}
-/* to make responsive */
-.menu {
-  visibility: hidden;
-  width: 20px;
-}
-.featureDetails {
   display: flex;
   justify-content: space-between;
+  font-size: small;
+}
+/* used to view the features when in mobile screen */
+.menu {
+  display: none;
+  padding: 3%;
+}
+/* containes feature and login buttons */
+.featureDetails {
+  display: flex;
+  justify-content: flex-start;
+}
+/* extra div to adjust visibilty when made responsive */
+.toggle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40vw;
 }
 .features,
 .login,
@@ -69,10 +77,11 @@ header {
 }
 
 /* section 1: Landing page css */
+
 .first {
   /* width: 1280px; */
   background-color: #0f1320;
-  min-height: 100vh;
+  min-height: 30vh;
   display: flex;
   justify-content: space-between;
   /* flex-wrap: wrap; */
@@ -100,6 +109,7 @@ header {
 .firstText h2 {
   font-size: 24px;
 }
+/* learn more button */
 .firstText button {
   background-color: #22a75d;
   color: white;
@@ -107,11 +117,14 @@ header {
   width: 100px;
   border-radius: 20px;
   border: none;
-  box-shadow: 0px 10px rgb(184, 216, 199 / 0.5);
   margin-top: 20px;
+  
 }
-
+.firstText button:hover{
+  box-shadow: 9px 14px 21px -3px rgba(58, 174, 85, 0.53);
+}
 /* section 2: users css */
+
 .second {
   background-color: #0f1320;
   padding-top: 0;
@@ -126,6 +139,7 @@ header {
   box-sizing: border-box;
   /* position: relative; */
 }
+
 .creators,
 .holders {
   background-color: #171b29;
@@ -143,16 +157,14 @@ header {
   text-align: left;
   box-sizing: border-box;
 }
-/* .holders {
-  margin-top: 10vh;
- 
-} */
+/* icon border */
 .hold {
   width: 20px;
   background-color: #22a75d;
   padding: 10px;
   border-radius: 50%;
 }
+/* to make both look similar */
 .paraHeight {
   min-height: 23vh;
 }
@@ -168,6 +180,7 @@ header {
 }
 
 /* section 3: what makes us different css */
+
 .third {
   /* width: 1280px; */
   background-color: #0f1320;
@@ -176,13 +189,10 @@ header {
   margin: 0;
   padding: 0;
   gap: 0;
-
-  /* overflow: hidden; */
 }
 .thirdText {
   min-height: 80vh;
   border-radius: 200px 0 0 0;
-
   background-color: white;
   color: black;
   min-width: 51%;
@@ -202,7 +212,6 @@ header {
 .textColor {
   color: black;
   opacity: 0.8;
-  /* margin-top: 10px; */
   padding-right: 16vw;
   opacity: 0.8;
   font-family: Gothic;
@@ -212,6 +221,7 @@ header {
   letter-spacing: 0em;
   text-align: left;
 }
+/* later use for watermark */
 #background {
   position: absolute;
   z-index: 0;
@@ -221,6 +231,7 @@ header {
   /* min-height: 50%;
   min-width: 50%; */
 }
+/* watermark text */
 #bg-text {
   font-family: "Notable", sans-serif;
   color: rgba(231, 228, 228, 0.5);
@@ -228,13 +239,10 @@ header {
   margin-top: -100px;
   margin-left: 130px;
   overflow: hidden;
-  /* transform:rotate(300deg);
-    -webkit-transform:rotate(300deg); */
 }
 
 /* section 4: q features css */
 .fourth {
-  /* width: 1280px; */
   background-color: #0f1320;
   min-height: 60vh;
   background-color: #fff;
@@ -243,7 +251,6 @@ header {
 }
 .fourthBg {
   background-color: #0f1320;
-  /* margin-top: 7vh; */
   border-radius: 0 200px 0 0;
   display: flex;
   justify-content: space-evenly;
@@ -254,6 +261,7 @@ header {
   padding-left: 8vw;
   padding-right: 8vw;
 }
+/* contains each q features */
 .qData {
   margin-top: 15vh;
   min-width: 25%;
@@ -264,10 +272,12 @@ header {
   font-weight: 400;
   opacity: 0.8;
 }
+/* to align each list,remove style */
 ol {
   margin-top: 3vh;
-  padding-left: 1vw;
-  min-height: 14vw;
+  padding-left: 0.2vw;
+  min-height: 24vw;
+  list-style-type: none;
 }
 .circ p {
   font-weight: 700;
@@ -291,12 +301,11 @@ ol {
 
 /* section 5: About tokener */
 .fifth {
-  /* width: 1280px; */
   background-color: #0f1320;
   display: flex;
   padding: 5%;
   gap: 5vw;
-  min-height: 120vh;
+  min-height: 79vh;
   box-sizing: border-box;
 }
 .fifthText {
@@ -316,26 +325,29 @@ ol {
   font-weight: 400;
   opacity: 0.6;
 }
+/* image of phone seems like bulging out */
 .phoneHolding {
-  position: absolute;
   right: 4vw;
+  margin-left: -4vw;
   z-index: 1;
-  min-height: 100%;
+  min-height: 20%;
   min-width: 100%;
+  max-width: 112%;
 }
 
 /* section 6: presale css */
+
 .sixth {
-  /* width: 1280px; */
   background-color: #0f1320;
   min-height: 40vh;
   box-sizing: border-box;
   padding-top: 15vh;
 }
+/* background image still needs curves */
 .sixthBG {
   margin: 0;
   padding: 0;
-  min-height: 50vh;
+  min-height: 40vh;
   background-image: url(./assets/sixthBG.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -362,7 +374,7 @@ ol {
 .phaseTwo {
   margin-top: 20vh;
 }
-
+/* each presale section */
 .phase {
   background-color: white;
   color: black;
@@ -411,6 +423,7 @@ ol {
 h1 {
   color: #000;
 }
+/* design of the oval type shape */
 .oval1 {
   background-color: #22a75d;
 }
@@ -448,7 +461,7 @@ h1 {
   background-color: #171b29;
   color: white;
   min-width: 15%;
-  min-height: 30vh;
+  min-height: 20vh;
   border-radius: 20px;
   padding: 1%;
   box-sizing: border-box;
@@ -468,22 +481,21 @@ h1 {
   align-items: center;
   padding: 2vw;
 }
-.outerTop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* footer section */
 footer {
-  min-height: 40vh;
+  min-height: 30vh;
   padding-top: 8%;
   display: flex;
   flex-direction: column;
   gap: 40px;
   box-sizing: border-box;
 }
-
+.outerTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .outerBottom {
   display: flex;
   justify-content: space-between;
@@ -502,12 +514,15 @@ footer {
   font-family: Gothic;
   font-size: 11px;
   font-style: normal;
+  text-decoration: underline;
+  /* gap: 1vw; */
 }
 .footLogo {
   width: 10px;
 }
 .auth {
   display: flex;
+  gap: 0.5vw;
 }
 .right {
   display: flex;
@@ -515,6 +530,7 @@ footer {
   justify-content: center;
   align-items: flex-end;
 }
+/* containes contact icons */
 .connect {
   width: 15px;
   height: 15px;
@@ -530,8 +546,45 @@ footer {
 }
 
 /* responsive */
-
-@media (max-width: 375px) {
+@media only screen and (max-width: 810px) {
+  .phoneHolding {
+    min-width: 20%;
+  }
+  .toggle {
+    gap: 18vh;
+  }
+  .phase {
+    min-width: 28%;
+    min-height: 33vh;
+    padding: 2vw;
+  }
+  .firstImage img {
+    margin-top: 20%;
+  }
+  .fifth {
+    flex-direction: column;
+  }
+  .next {
+    display: none;
+  }
+  .third {
+    min-height: 80vh;
+  }
+  .creators,
+  .holders {
+    min-height: 40%;
+  }
+  #background {
+    display: none;
+  }
+  .thirdText {
+    min-height: 98vh;
+  }
+  ol {
+    min-height: 37vw;
+  }
+}
+@media only screen and (max-width: 510px) {
   .first {
     padding: 0 5vw 0 5vw;
     box-sizing: border-box;
@@ -541,18 +594,61 @@ footer {
   .second,
   .third,
   .fifth,
-  .phaseContainer,
-  .buyContainer {
+  .buyContainer,
+  .outerBottom,
+  .phaseContainer {
     flex-direction: column;
   }
+  .phase {
+    min-width: 74%;
+    min-height: 94vw;
+  }
+  .left {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    display: flex;
+    cursor: pointer;
+  }
+  .featureDetails,
+  .features,
+  .login,
+  .toggle {
+    /* display: flex; */
+    flex-direction: column;
+    gap: 0;
+  }
+  .toggle {
+    position: absolute;
+    top: 4%;
+    left: 70%;
+    visibility: hidden;
+  }
+  .show {
+    /* display: none; */
+    visibility: visible;
+    background-color: #171b29;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sixthBG {
+    border-radius: 0 0 0 0;
+  }
+  /* .phaseContainer {
+    flex-flow: row;
+  } */
   .phaseTwo {
     margin-top: 0;
   }
-  .featureDetails {
-    visibility: hidden;
-  }
-  .thirdText #background {
-    visibility: hidden;
+
+  .thirdText #background,
+  #bg-text {
+    display: none;
   }
   .qData {
     margin-top: 1vw;
@@ -563,31 +659,60 @@ footer {
     margin-top: 1vh;
     box-sizing: border-box;
   }
-  .thirdImage{
+  .thirdImage {
     border-radius: 200px 0 0 0;
   }
-  .thirdText{
+  .thirdText {
     border-radius: 0 200px 0 0;
   }
-  .fourthBg{
-
+  .fourthBg {
     align-items: flex-start;
   }
-  .qData{
+  .qData {
     padding: 3vw;
     box-sizing: border-box;
   }
-  .phoneHolding{
+  .phoneHolding {
     position: relative;
     min-width: 20%;
+    max-width: 100%;
     min-height: 20%;
     margin-right: 2vw;
     box-sizing: border-box;
-    
+    left: 0;
   }
-  .fifthImage{
+  .fifthImage {
     min-width: 5%;
     position: relative;
     box-sizing: border-box;
+  }
+  .next {
+    visibility: hidden;
+  }
+  .outerTop {
+    visibility: hidden;
+  }
+  .outerBottom,
+  .right {
+    align-items: center;
+    justify-content: center;
+  }
+  footer {
+    padding-top: 5%;
+  }
+  .contols {
+    visibility: visible;
+  }
+  /* .aboutDetails{
+    width: 30ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  } */
+  .truncate {
+    width: 32ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
